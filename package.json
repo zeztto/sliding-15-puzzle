@@ -1,0 +1,27 @@
+{
+  "name": "sliding-15-puzzle",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs",
+    "preview": "node scripts/serve.mjs",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --max-warnings=0",
+    "test": "node --test tests/*.test.js",
+    "build": "node scripts/build.mjs",
+    "check": "npm run typecheck && npm run lint && npm test && npm run build"
+  },
+  "devDependencies": {
+    "jsdom": "27.4.0",
+    "typescript": "5.9.3",
+    "eslint": "9.39.5",
+    "@eslint/js": "9.39.5",
+    "globals": "17.13.0",
+    "@types/node": "22.20.5"
+  }
+}
